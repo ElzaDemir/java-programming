@@ -1,0 +1,17 @@
+package day35_methods_with_param;
+
+import java.util.Locale;
+
+public class Email {
+    public static void main(String[] args) {
+        buildEmail("Aslan Demir","cybertekschool");
+        buildEmail("Elvira Ismayilova","gmail");
+
+    }
+    public static void buildEmail(String name, String domain){
+        name = name.replace(" ", "_").toLowerCase();
+        domain = domain.toLowerCase();
+
+        System.out.println(name.toLowerCase() + "@" + domain + ".com");
+    }
+}
