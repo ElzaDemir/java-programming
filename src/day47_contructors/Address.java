@@ -4,7 +4,29 @@ public class Address {
     private String street, city, state, zipCode;
     private String country = "USA";
 
+    public Address(){   // THIS IS CONSTRUCTOR - AUTOMATICALLY CALLED
+        //no return type,
+        System.out.println("Address constructor");
+        street = "123 unknown";
+        city = "Unknown";
+        state = "Unknown";
+        zipCode = "00000";
+    }
+    //second constructor, overloaded constructor - provides shortcut to initialize variables
+    // in same statement: ex: Address ad - new Address ("123 java st", "Boston", "MA", "43212");
+    public Address(String street, String city, String state, String zipCode){
+        setStreet(street);
+        this.city = city;
+        this.state = state;
+        this.zipCode = zipCode;
+    }
+
     public void setStreet (String street){
+        if(street.isEmpty() || street.length()>50){
+            System.out.println("ERROR: Invalid street");
+        }else{
+            this.street = street;
+        }
         this.street = street;
     }
     public String getStreet(){
