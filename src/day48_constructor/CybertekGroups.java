@@ -26,5 +26,8 @@ public class CybertekGroups {
         }else{
             System.out.println("Akrem is not in group2");
         }
+        group1.removeMember("Pavel");
+        group1.removeMember("Elvin");
+        System.out.println(group1);
     }
 }
