@@ -12,5 +12,7 @@ public class CalculatorTest {
         calObject.multiply(2, 4);
         //static method can also be called using an Object
         calObject.add(10, 45);
+
+        System.out.println("Hello World"); //just for the git practice
     }
 }
