@@ -5,6 +5,10 @@ import java.util.Arrays;
 import java.util.List;
 
 public class StaticBlockDemo {
+
+    public static class Inner{
+
+    }
     static int num;
     static List<String> carModels;
     static {
