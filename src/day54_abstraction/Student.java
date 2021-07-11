@@ -1,7 +1,7 @@
 package day54_abstraction;
 
 /**
- * --> we add abstract keyword toa class to make it an abstract class
+ * --> we add abstract keyword to a class to make it an abstract class
  * --> We cannot create object of Student class - meaning:
  * student student = new Student(); will show ERROR
  * --> what can we do with this Student class? We can extend this class by sub classes
@@ -14,7 +14,7 @@ public abstract class Student {
     }
 
     /**
-     * we can add abstract class into asbtract class.
+     * we can add abstract method into abstract class.
      * abstract method - is created using abstract keyword
      * and does not have the implementation/method body
      *
